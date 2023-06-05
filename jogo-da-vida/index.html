@@ -1,26 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Conversor de Números Arábicos para Romanos</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Juego de la vida (Conway)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- CSS (Estilos) -->
+    <link rel="stylesheet" href="style.css"  />
 </head>
+
 <body>
-  <div class="container">
-    <h1>Conversor de Números Arábicos para Romanos</h1>
-
-    <div class="input-group">
-      <label for="arabic">Número Arábico:</label>
-      <input type="number" id="arabic" placeholder="Digite um número arábico">
+    <!-- HTML (Estrutura) -->
+    <div id="contenedor-tablero">
     </div>
 
-    <button onclick="convert()">Converter</button>
+    <div class="contenedor-botones">
 
-    <div class="result">
-      <span class="result-label">Número Romano:</span>
-      <span id="roman"></span>
+        <div class="btn" id="btn1" onclick=" intercambiarReproducción()">
+            <i class="fas fa-play" title="Iniciar cambio de estados"></i>
+        </div>
+
+        <div class="btn" id="btn2">
+            <i class="fas fa-step-forward" onclick="siguienteEstado()" title="Siguiente estado"></i>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="btn" id="btn4" onclick="randomizar()" title="Aleatorio">
+            <i class="fas fa-random"></i>
+        </div>
+
+        <div class="btn" id="btn3" onclick="limpiar()" title="Limpiar">
+            <i class="fas fa-eraser"></i>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="btn" id="btn5" onclick="minus()" title="Alejarse">
+            <i class="fas fa-minus"></i>
+        </div>
+
+        <div class="btn" id="btn6" onclick="plus()" title="Acercarse">
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <br><br>
+
+        <div class="btn" id="btn7" onclick="centrar()" title="centrar">
+       <!-- Svg           -->
+            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="location" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-location fa-w-16 fa-2x"><path fill="currentColor" d="M504 240h-56.81C439.48 146.76 365.24 72.52 272 64.81V8c0-4.42-3.58-8-8-8h-16c-4.42 0-8 3.58-8 8v56.81C146.76 72.52 72.52 146.76 64.81 240H8c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h56.81c7.71 93.24 81.95 167.48 175.19 175.19V504c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8v-56.81c93.24-7.71 167.48-81.95 175.19-175.19H504c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM256 416c-88.22 0-160-71.78-160-160S167.78 96 256 96s160 71.78 160 160-71.78 160-160 160zm0-256c-53.02 0-96 42.98-96 96s42.98 96 96 96 96-42.98 96-96-42.98-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64z" class=""></path></svg>
+        </div>
+
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <!-- JS (Lógica) -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
+
+ 
