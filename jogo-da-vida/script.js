@@ -1,6 +1,6 @@
 // Código de desafío! :) Kayke Barbosa Loiola 
-        let filas = 50
-        let columnas = 50
+        let filas = 100
+        let columnas = 100
         let lado = 15
 
         let reproducir = false
