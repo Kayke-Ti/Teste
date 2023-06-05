@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Divisão de Conta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Divisão de Conta</h1>
+    <!-- 
+     OBS: 
+      * Colocando mais de um valor ou texto a separação é por vírgula.  
+      * Os valores são exatos todos eles. Após a operação.
+     -->
+    <div class="input-group">
+      <label for="clients">Clientes:</label>
+      <input type="text" id="clients" placeholder="Digite os nomes dos clientes separados por vírgula">
+    </div>
+
+    <div class="input-group">
+      <label for="products">Produtos:</label>
+      <input type="text" id="products" placeholder="Digite os nomes dos produtos separados por vírgula">
+    </div>
+    
+    <div class="button">
+      <button onclick="calculate()">Calcular</button>
+    </div>
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
